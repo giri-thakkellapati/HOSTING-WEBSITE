@@ -19,18 +19,19 @@
    Add files of website to the directory
    Test NGINX config: sudo nginx -t.
  * Restart NGINX: sudo service nginx restart.
-
  * Access your app using your server's IP
  
 #**CONNECTING DOMAIN**
+
      * Access your Namecheap account.
-    
+
      * Go to advanced DNS settings for your domain.
     
      * Add Host records
      
 
 #**ADDING SSL CERTIFICATE**
+
      *Install Certbot:
           -sudo snap install --classic certbot
            -sudo ln -s /snap/bin/certbot /usr/bin/certbot
