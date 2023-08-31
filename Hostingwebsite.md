@@ -1,4 +1,4 @@
-**STEPS FOR HOSTING A WEBSITE**
+#**STEPS FOR HOSTING A WEBSITE**
 
  * Login into your AWS Account and open EC2-Dashboard
  * Type name of your desirable instance
@@ -22,33 +22,33 @@
 
  * Access your app using your server's IP
  
-**CONNECTING DOMAIN**
- * Access your Namecheap account.
+#**CONNECTING DOMAIN**
+     * Access your Namecheap account.
+    
+     * Go to advanced DNS settings for your domain.
+    
+     * Add Host records
+     
 
- * Go to advanced DNS settings for your domain.
+#**ADDING SSL CERTIFICATE**
+     *Install Certbot:
+          -sudo snap install --classic certbot
+           -sudo ln -s /snap/bin/certbot /usr/bin/certbot
+       
+#**CONFORMING NGINXS CONFIGURATION**
 
- * Add Host records
+     *sudo nano /etc/nginx/sites-available/example.com
+     *Update the server name
+        ` ...
+             server_name example.com www.example.com;
+             ...`
+     * verify the syntax
+           -sudo nginx -t
+           -sudo systemctl reload nginx
+       
+#**OBTAINING SSL CERTIFICATE**
  
-
-**ADDING SSL CERTIFICATE**
- *Install Certbot:
-  -sudo snap install --classic certbot
-   sudo ln -s /snap/bin/certbot /usr/bin/certbot
-   
-**CONFORMING NGINXS CONFIGURATION**
-
- *sudo nano /etc/nginx/sites-available/example.com
- *Update the server name
-    ` ...
-         server_name example.com www.example.com;
-         ...`
- * verify the syntax
-   -sudo nginx -t
-   -sudo systemctl reload nginx
-   
-**OBTAINING SSL CERTIFICATE**
- 
-   *sudo certbot --nginx -d example.com -d www.example.com
+       *sudo certbot --nginx -d example.com -d www.example.com
 
 
 
