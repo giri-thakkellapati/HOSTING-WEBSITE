@@ -23,18 +23,17 @@
  
 #**CONNECTING DOMAIN**
 
-     * Access your Namecheap account.
-
-     * Go to advanced DNS settings for your domain.
-    
-     * Add Host records
+  * Access your Namecheap account.
+  * Go to advanced DNS settings for your domain.
+  * Add Host records
      
 
 #**ADDING SSL CERTIFICATE**
 
-     *Install Certbot:
-          -sudo snap install --classic certbot
-           -sudo ln -s /snap/bin/certbot /usr/bin/certbot
+  *Install Certbot:
+     
+   -sudo snap install --classic certbot
+   -sudo ln -s /snap/bin/certbot /usr/bin/certbot
        
 #**CONFORMING NGINXS CONFIGURATION**
 
