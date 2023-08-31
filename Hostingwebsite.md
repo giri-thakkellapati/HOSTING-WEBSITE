@@ -32,23 +32,23 @@
 
   *Install Certbot:
      
-       -sudo snap install --classic certbot
-       -sudo ln -s /snap/bin/certbot /usr/bin/certbot
+       sudo snap install --classic certbot
+       sudo ln -s /snap/bin/certbot /usr/bin/certbot
        
 #**CONFORMING NGINXS CONFIGURATION**
 
-     *sudo nano /etc/nginx/sites-available/example.com
-     *Update the server name
+     sudo nano /etc/nginx/sites-available/example.com
+     Update the server name
         ` ...
              server_name example.com www.example.com;
              ...`
-     * verify the syntax
-           -sudo nginx -t
-           -sudo systemctl reload nginx
+     verify the syntax
+           sudo nginx -t
+           sudo systemctl reload nginx
        
 #**OBTAINING SSL CERTIFICATE**
  
-       *sudo certbot --nginx -d example.com -d www.example.com
+       sudo certbot --nginx -d example.com -d www.example.com
 
 
 
