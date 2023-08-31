@@ -25,11 +25,11 @@
    
  * Test NGINX config:
    
-        sudo nginx -t.
+        sudo nginx -t
    
  * Restart NGINX:
    
-         sudo service nginx restart.
+         sudo service nginx restart
    
  * Access your app using your server's IP
  
