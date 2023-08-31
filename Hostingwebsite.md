@@ -9,7 +9,7 @@
  * Access your instance by selecting instance then click on connect button.
  * Select SSH client - open terminal and use the below command to access the server.
    
-        -ssh -i “pem file path” ubuntu@instancePublicIP
+        ssh -i “pem file path” ubuntu@instancePublicIP
    
  * Now you can install nginx
    
@@ -42,7 +42,7 @@
 
 ## **Adding SSL Certificate**
 
-  *Install Certbot:
+  Install Certbot:
      
        sudo snap install --classic certbot
        sudo ln -s /snap/bin/certbot /usr/bin/certbot
@@ -51,13 +51,13 @@
 
          sudo nano /etc/nginx/sites-available/example.com
      
-   *Update the server name
+   Update the server name
      
              ...
              server_name example.com www.example.com;
              ...
              
-   *verify the syntax
+   verify the syntax
      
            sudo nginx -t
            sudo systemctl reload nginx
