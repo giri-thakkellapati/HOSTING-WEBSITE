@@ -32,8 +32,8 @@
 
   *Install Certbot:
      
-   -sudo snap install --classic certbot
-   -sudo ln -s /snap/bin/certbot /usr/bin/certbot
+       -sudo snap install --classic certbot
+       -sudo ln -s /snap/bin/certbot /usr/bin/certbot
        
 #**CONFORMING NGINXS CONFIGURATION**
 
